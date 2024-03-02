@@ -2,7 +2,7 @@ import os
 import datetime
 from git import Repo
 
-def delete_old_branches(repo_path, weeks_threshold=3):
+def delete_old_branches(repo_path, weeks_threshold=1):
     repo = Repo(repo_path)
     current_date = datetime.datetime.now()
 
